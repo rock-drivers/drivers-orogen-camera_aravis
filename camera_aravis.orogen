@@ -1,0 +1,15 @@
+name "camera_aravis"
+# version "0.1"
+
+using_library "aravis-0.2"
+using_task_library "camera_base"
+import_types_from "camera_base"
+import_types_from "base"
+
+task_context 'Task' do
+    subclasses "camera_base::Task"
+    operation("listCameras").
+        #returns("/std/vector</std/string>")
+        returns("/std/string")
+end
+

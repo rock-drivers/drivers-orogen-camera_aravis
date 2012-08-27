@@ -1,0 +1,11 @@
+<package>
+  <description brief="">
+  
+  </description>
+  <author>Matthias Goldhoorn/matthias@goldhoorn.eu</author>
+  <license>LGPL</license>
+  <url>http://</url>
+  <logo>http://</logo>
+  <depend package="drivers/orogen/camera_base" />
+  <tags>needs_opt</tags>
+</package>
