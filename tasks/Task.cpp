@@ -76,7 +76,7 @@ bool Task::configureHook()
     double exposure_min, exposure_max,gain_min,gain_max;
     
     unsigned int pixel_format_count;
-    long int *formats = arv_camera_get_available_pixel_formats(camera,&pixel_format_count);
+    gint64 *formats = arv_camera_get_available_pixel_formats(camera,&pixel_format_count);
     for(int i=0;i<pixel_format_count;i++){
         printf("Format: 0x%08x\n",formats[i]);
     }
