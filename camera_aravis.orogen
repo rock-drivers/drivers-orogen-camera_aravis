@@ -9,5 +9,8 @@ import_types_from "camera_aravis"
 
 task_context 'Task' do
     subclasses "camera_base::Task"
-end
 
+    property('auto_exposure_factor', 'int', 3)
+    property('auto_exposure_target_value', 'int', 100)
+    property('auto_exposure_tolerance', 'int', 10)
+end
