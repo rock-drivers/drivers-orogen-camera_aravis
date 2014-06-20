@@ -22,7 +22,8 @@ Orocos.run "camera_aravis::Task"=> "Task" do
     task.configure
     task.start
     Orocos.log_all_ports
+    Vizkit.display task
     Vizkit.display task.frame
-
+    
     Vizkit.exec
 end
