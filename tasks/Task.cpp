@@ -36,6 +36,5 @@ bool Task::configureHook()
 
 void camera_aravis::triggerFunction(const void *p)
 {
-	std::cout << "Trigger!" << std::endl;
 	((RTT::TaskContext*)p)->getActivity()->trigger();
 }
