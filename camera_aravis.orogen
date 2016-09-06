@@ -1,7 +1,7 @@
 name "camera_aravis"
 # version "0.1"
 
-using_library "aravis-0.4"
+using_library "aravis-0.6"
 using_library "camera_aravis"
 using_task_library "camera_base"
 
