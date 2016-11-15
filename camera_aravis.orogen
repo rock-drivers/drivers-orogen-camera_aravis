@@ -11,4 +11,12 @@ task_context 'Task' do
     property('auto_exposure_factor', 'int', 3)
     property('auto_exposure_target_value', 'int', 100)
     property('auto_exposure_tolerance', 'int', 10)
+
+    # Resets the state of the device back to the one on power-up.
+    # This might helpful if the device is in an unknown or not working state.
+    # Note that the startup of the driver will be significantly slower.
+    property('reset_device_on_startup', 'bool', false)
+
+    # Specifies the max packet size on an ethernet connection. Default is 1500.
+    property('eth_packet_size', 'int', 1500)
 end

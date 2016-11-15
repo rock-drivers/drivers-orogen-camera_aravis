@@ -26,8 +26,11 @@ bool Task::configureHook()
     if (! TaskBase::configureHook())
         return false;
 
+    if(_reset_device_on_startup.value())
+    	CameraAravis::resetCamera(_camera_id.value());
+
     CameraAravis* camera = new CameraAravis();
-    camera->openCamera(_camera_id.value());
+    camera->openCamera(_camera_id.value(), _eth_packet_size.value());
 
     cam_interface = camera;
     cam_interface->setCallbackFcn(triggerFunction,this);
