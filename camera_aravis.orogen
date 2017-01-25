@@ -8,10 +8,6 @@ using_task_library "camera_base"
 task_context 'Task' do
     subclasses "camera_base::Task"
 
-    property('auto_exposure_factor', 'int', 3)
-    property('auto_exposure_target_value', 'int', 100)
-    property('auto_exposure_tolerance', 'int', 10)
-
     # Resets the state of the device back to the one on power-up.
     # This might helpful if the device is in an unknown or not working state.
     # Note that the startup of the driver will be significantly slower.
