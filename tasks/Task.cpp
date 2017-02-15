@@ -32,6 +32,9 @@ bool Task::configureHook()
     CameraAravis* camera = new CameraAravis();
     camera->openCamera(_camera_id.value(), _eth_packet_size.value());
 
+    if(_reset_timestamp.value())
+        camera->resetTimestamp();
+
     cam_interface = camera;
     cam_interface->setCallbackFcn(triggerFunction,this);
     return true;

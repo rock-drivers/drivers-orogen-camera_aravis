@@ -12,6 +12,10 @@ task_context 'Task' do
     # This might helpful if the device is in an unknown or not working state.
     # Note that the startup of the driver will be significantly slower.
     property('reset_device_on_startup', 'bool', false)
+    # Reset the timestamp register in the camera and save the time it was
+    # performed.  This time is added to the frame's timestamp. Useful when
+    # camera restart its counter at reseting or powering on.
+    property('reset_timestamp', 'bool', false)
 
     # Specifies the max packet size on an ethernet connection. Default is 1500.
     property('eth_packet_size', 'int', 1500)
