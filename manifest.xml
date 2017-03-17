@@ -2,10 +2,9 @@
   <description brief="">
   
   </description>
+  <maintainer>Diego Cesar/diego.b.cesar@gmail.com</maintainer>
   <author>Matthias Goldhoorn/matthias@goldhoorn.eu</author>
   <license>LGPL</license>
-  <url>http://</url>
-  <logo>http://</logo>
   <depend package="drivers/orogen/camera_base" />
   <depend package="drivers/camera_aravis" />
   <tags>needs_opt</tags>
